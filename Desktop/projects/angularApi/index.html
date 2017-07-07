@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html ng-app="angApi">
+  <head>
+    <meta charset="utf-8">
+    <title>Angular API Thangz</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="useless">
+
+    </div>
+
+
+    <nav class="top">
+      <div class="dropdownBackground">
+        <span class="arrow"></span>
+      </div>
+      <ul class="cool">
+        <li>
+          <a ui-sref="home">HOME PAGE</a>
+          <div class="dropdown homedrop">
+            <div class="home">
+              <a ui-sref="home">TO THE BATMOBILE!!!</a>
+            </div>
+          </div>
+        </li>
+        <li>
+          <a href="/auth">LOG-IN</a>
+          <div class="dropdown logdrop">
+          <div class="logIn">
+            <a href="/auth"><img src="./noWhining.jpg"></a>
+          </div>
+          </div>
+        </li>
+        <li>
+          <a ui-sref="workout">WORKOUT INDEX</a>
+          <ul class="dropdown wkouts">
+            <li>
+              <a ui-sref="workout">How To Get Dem Washboard Abs</a>
+            </li>
+            <li>
+              <a ui-sref="backList">Build A Back Wit Dat V-Shape Taper</a>
+            </li>
+            <li>
+              <a ui-sref="biList">Get Dem Biceps Mad Swole</a>
+            </li>
+            <li>
+              <a ui-sref="chestList">Make Dem Pecs Do Dat Terry Crews Bounce</a>
+            </li>
+            <li>
+              <a ui-sref="legList">Prove You Don't Skip Leg Day, Bro</a>
+            </li>
+            <li>
+              <a ui-sref="deltList">Workouts To Get Dem Bowling Ball Shoulders</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a ui-sref="logRun">LOG WORKOUT</a>
+          <ul class="dropdown logs">
+            <li>
+              <a ui-sref="logBike">Log A Bike Ride</a>
+            </li>
+            <li>
+              <a ui-sref="logGym">Log A Gym Workout</a>
+            </li>
+            <li>
+              <a ui-sref="logRun">Log A Run So You Can Tell Everyone On Facebook</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a ui-sref="myWorkouts">MY WORKOUTS</a>
+          <div class="dropdown">
+            <a ui-sref="myWorkouts"><p class="myWork">Search Gym Workouts</p></a>
+            <a ui-sref="myRuns"><p class="myWork">Search My Past Runs</p></a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <ui-view></ui-view>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.3/angular-ui-router.js"></script>
+    <script src="app.js"></script>
+    <script src="mainCtrl.js"></script>
+    <script src="service.js"></script>
+    <script src="dropdown.js"></script>
+  </body>
+</html>

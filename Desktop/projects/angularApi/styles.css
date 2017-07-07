@@ -1,0 +1,266 @@
+html {
+  box-sizing: border-box;
+  background:#eeeeee;
+  font-family:'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+body {
+  margin: 0;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body.fixed-nav .site-wrap {
+  transform: scale(1);
+}
+.useless {
+  height: 10vh;
+}
+.runRow {
+  text-align: center;
+}
+.runRow:hover {
+  background-color: black;
+
+
+}
+.runTable1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.thRun:hover {
+  font-size: 1.2em;
+}
+.runTable2 {
+  margin-left: auto;
+  margin-right: auto;
+}
+.runButton {
+  position: absolute;
+  left: 45%;
+  right: 45%;
+}
+.site-wrap {
+  background-image: url(bench1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 230vh;
+  width: 100%;
+
+}
+
+.pageHead {
+  color:black;
+  font-size: 7vw;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+}
+
+nav {
+  background:purple;
+  border: 2px solid black;
+  top:0;
+  width: 100%;
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
+ {
+
+}
+.cool > li > a {
+  color: #EEEEEE;
+  text-shadow: none;
+  text-decoration: none;
+  font-size: 20px;
+  /*background: rgba(0,0,0,0.2);*/
+  padding:10px 20px;
+  display: inline-block;
+  margin:20px;
+  border-radius:5px;
+}
+.cool > li > a:hover {
+  color: black;
+  font-weight: bold;
+  text-shadow: 3px 4px 0 rgba(0,0,0,0.2)
+
+}
+
+nav {
+  position: fixed;
+  box-shadow:0 5px 0 rgba(0,0,0,0.1);
+}
+
+nav ul {
+  margin: 0;
+  padding:0;
+  list-style: none;
+  display:flex;
+  justify-content: center;
+}
+
+nav li {
+  flex:1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+nav a {
+  text-decoration: none;
+  padding:20px;
+  display: inline-block;
+  color:black;
+  transition:all 0.2s;
+  text-transform: uppercase;
+}
+.logWrapper {
+  display: flex;
+
+}
+.cool > li {
+  position: relative;
+  display:flex;
+  justify-content: center;
+
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  overflow: hidden;
+  padding:20px;
+  top: -15px;
+  border-radius:2px;
+  transition: all 0.5s;
+  transform: translateY(100px);
+  will-change: transform;
+  display: none;
+}
+
+.trigger-enter .dropdown {
+  display: block;
+}
+
+.trigger-enter-active .dropdown {
+  opacity: 1;
+}
+
+
+
+.dropdownBackground {
+  min-width:100px;
+  min-height:100px;
+  position: absolute;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+  transition:all 0.3s, opacity 0.1s, translate 0.2s;
+  transform-origin: 50% 0%;
+  display: flex;
+  justify-content: center;
+  opacity:0;
+}
+
+.dropdownBackground.open {
+  opacity: 1;
+}
+
+.arrow {
+  position: absolute;
+  width:20px;
+  height:20px;
+  display: block;
+  background:white;
+  transform: translateY(-50%) rotate(45deg);
+}
+.logIn {
+  width:400px;
+  display:flex;
+  justify-content: auto;
+  align-items: center;
+  line-height: 1.7;
+}
+
+.logIn img {
+  height: 200px;
+  width: 400px;
+  float:left;
+  border: 1px solid purple;
+}
+
+.home {
+  min-width:200px;
+  display:flex;
+  justify-content: auto;
+  align-items: center;
+  line-height: 1.7;
+}
+
+.home img {
+  height: 100px;
+  width: 100px;
+  float:left;
+  margin-left: 20px;
+}
+.logdrop {
+  min-width: 500px;
+}
+
+.wkouts {
+  min-width:500px;
+}
+
+.wkouts li {
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.logs {
+  min-width:150px;
+}
+
+.logs li {
+  padding: 10px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.myWork {
+  min-width: 200px;
+}
+
+.dropdown a {
+  text-decoration: none;
+  color: black;
+}
+.homeContainer {
+  position: absolute;
+  top: 115vh;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  height: 120vh;
+  flex-wrap: wrap;
+  width: 100%;
+
+}
+.box {
+  padding-left: 75px;
+  padding-bottom: 50px;
+  width: 47%;
+  height: 50vh;
+}
+.box1 {
+  padding-top: 40px;
+}
+.box2 {
+  padding-left: 150px;
+  padding-top: 40px;
+}
+.box3 {
+}
+.box4 {
+  padding-left: 150px;
+}
